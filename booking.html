@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TanitiBooking</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="taniti.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+
+        <header>
+            <a class="homenav" class="link" href="tanitihome.html">Home</a>
+            <a class="bookinghead" href="booking.html">Booking</a>
+            <nav>
+                <ul>
+                    <li><a class="link" href="transport.html">Transport</a></li>
+                    <li><a class="link" href="lodging.html">Lodging</a></li>
+                    <li><a class="link" href="activities.html">Activities</a></li>
+                    <li><a class="link" href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <ul class="Languagedrop">
+                <li class="language">Language
+                    <ul class="dropdownproducts">
+                        <li>English</li>
+                        <li>日本語</li>
+                        <li>Español</li>
+                        <li>Tanitian</li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+
+        <main>
+            <section class="introtopage">
+                <div class="pagename">Booking</div>
+                <img src="taniti3.jpg" alt="image of taniti">
+            </section>
+
+            <section class="introparagraph">
+                <h2>Booking</h2>
+                <p class="bookingp">
+                    Book your stay today. Enter your information below in our booking form and we will call you back
+                    within 24 hours to give you a personalized booking at an amazing price.  
+                </p>
+            </section>
+
+            <section class="bookingcontact">
+                <h2 class="faqh2">Booking Form</h2>
+                <form class="bookingform">
+                    <fieldset>
+                        <div class="info1">
+                            <label for="first-name">Enter your first name: <input id="first-name" name="first-name" type="text" required/></label>
+                            <label for="last-name">Enter your last name: <input id="last-name" name="last-name" required type="text"/></label>
+                        </div>
+                        <div class="info2">
+                            <label for="email">Enter your email: <input id="email" name="email" required type="email"/></label>
+                            <label for="phone">Enter your phone number: <input id="phone" name="phone" required type="tel"/></label>
+                        </div>
+                        <div class="info1">
+                            <label for="people">How Many People: <input id="people" name="people" required type="number"/></label>
+                            <label for="budget">Budget <input id="budget" name="budget" required type="number"/></label>
+                        </div>
+                        <div class="info3">
+                            <label for="date-from">Date From: <input id="date-from" name="date-from" type="date" required/></label>
+                            <label for="date-to">Date To: <input id="date-to" name="date-to" required type="date"/></label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="bookingselect">
+                        <label for="Arrival-method">Arrival Method: 
+                            <select required id="arrival" name="arrival">
+                              <option value="">Select</option>
+                              <option value="1">Direct Flight</option>
+                              <option value="2">Budget Flight</option>
+                              <option value="3">Cruise</option>
+                              <option value="4">Other</option>
+                            </select>
+                          </label>
+                          <label for="lodging">Lodging: 
+                            <select required id="lodging" name="lodging">
+                              <option value="">Select</option>
+                              <option value="1">Hotel</option>
+                              <option value="2">Private Home</option>
+                              <option value="3">Beach Home</option>
+                              <option value="4">Bed and Breakfast</option>
+                              <option value="5">Other</option>
+                            </select>
+                          </label>
+                          <label for="activities">Activities: 
+                            <select required id="activities" name="activities">
+                              <option value="">Select</option>
+                              <option value="1">Ziplining</option>
+                              <option value="2">Sightseeing Tour</option>
+                              <option value="3">Snorkeling</option>
+                              <option value="4">Golfing</option>
+                              <option value="5">Other</option>
+                            </select>
+                          </label>
+                    </fieldset>
+                    <fieldset>
+                        <button type="submit" class="submit">SUBMIT</button>
+                    </fieldset>
+                </form>
+            </section>
+
+            <section class="bookingcontact">
+                <h2>Contact Us</h2>
+                <form class="faqform">
+                    <fieldset>
+                        <div class="info1">
+                            <label for="first-name">Enter your first name: <input id="first-name" name="first-name" type="text" required/></label>
+                            <label for="last-name">Enter your last name: <input id="last-name" name="last-name" required type="text"/></label>
+                        </div>
+                        <div class="info2">
+                            <label for="email">Enter your email: <input id="email" name="email" required type="email"/></label>
+                            <label for="phone">Enter your phone number: <input id="phone" name="phone" required type="tel"/></label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <textarea rows="7" cols="50" placeholder="What would you like to know?" id="consultquestion" name="consultquestion"></textarea>
+                        <button type="submit" class="submit">SUBMIT</button>
+                    </fieldset>
+                </form>
+            </section>
+
+        </main>
+       
+        <footer>
+            <img src="beach3.jpg" class="footerimg" alt="image of a beach">
+            <p>
+                Taniti is a small, tropical island in the Pacific. While the island has an area of less than
+                500 square miles, the terrain is varied and includes both sandy and rocky beaches, a small but 
+                safe harbor, lush tropical rainforests, and a mountainous interior that includes a small, 
+                active volcano. Taniti has an indigenous population of about 20,000. Until a recent increase 
+                in tourism, most the Tanitian economy was dominated by fishing or agriculture.
+            </p>
+            <div class="footerlinks">
+                <ul>
+                    <li><a class="link" href="transpor.html">Transport</a></li>
+                    <li><a class="link" href="lodging.html">Lodging</a></li>
+                    <li><a class="link" href="activities.html">Activities</a></li>
+                    <li><a class="link" href="faq.html">FAQ</a></li>
+                </ul>
+                <address>
+                    2093 Paradise Express DR<br>
+                    Taniti<br>
+                    801-555-1234<br>
+                    tanitipeople@yass.com
+                </address>
+            </div>
+        </footer>
+
+    </body>
+</html>

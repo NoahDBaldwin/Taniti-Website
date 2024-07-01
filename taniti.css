@@ -1,0 +1,1040 @@
+/* 
+Colors: 
+    #f1ffea: baby green
+    #fdffeb: sand
+    #756f87: dark blue/purple
+    #d4e0ce: army green
+    #9ea799d2: box shadow for green
+    #a5c29e: darker green
+    #4d4959: darker purple
+*/
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Header and navigation -------------------------------------- */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    margin: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 70px;
+    padding: 0px;
+    background-color: #d4e0ce;
+    z-index: 6;
+    border-bottom: 3px solid #a5c29e;
+}
+
+.homenav {
+    margin-left: 7%;
+    font-weight: 700;
+    font-size: 1.6em;
+    text-decoration: none;
+    border: solid 4px #756f87;
+    box-shadow: 5px 5px 3px #9ea799d2;
+    padding: 4px 9px;
+    background-color: #f1ffea;
+    height: 30px;
+    margin-top: 13px;
+}
+
+.link {
+    color: #4d4959;
+}
+
+.link:hover {
+    color: #f1ffea;
+}
+
+.link:active {
+    color: #756f87;
+}
+
+nav {
+    margin-left: 15%;
+    margin-right: 0%;
+    width: 40%;
+    padding-top: 8px;
+}
+
+nav ul {
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a {
+    text-decoration: none;
+
+}
+
+.bookinghead {
+    font-size: 1.6em;
+    text-decoration: none;
+    border: solid 4px #756f87;
+    box-shadow: 5px 5px 3px #9ea799d2;
+    margin-right: 4%;
+    padding: 4px 9px;
+    background-color: #f1ffea;
+    font-weight: 700;
+    height: 30px;
+    margin-top: 13px;
+    margin-left: 5%;
+}
+
+.homenav:hover, .bookinghead:hover, .bookstay a:hover {
+    background-color: #756f87;
+    color: #f1ffea;
+    border: double 4px #f1ffea;
+    border-radius: 10px;
+}
+
+.language {
+    border: solid 4px #756f87;
+    margin-top: 5px;
+    padding: 2px 5px;
+    margin-right: 5px;
+    list-style: none;
+    background-color: #f1ffea;
+    font-size: 1.2em;
+    box-shadow: 5px 5px 3px #9ea799d2;
+}
+
+.dropdownproducts {
+    display: none;
+    list-style: none;
+}
+
+.language:hover .dropdownproducts {
+    display: block;
+    background-color: #f1ffea;
+    position: relative;
+    border: none;
+}
+
+.dropdownproducts:hover {
+    background-color: #f1ffea;
+    box-shadow: 5px 5px 3px #9ea799d2;
+}
+
+
+/* Homepage ---------------------------------------------------------------------Homepage-----*/ 
+
+
+.homemain {
+    background-color: white;
+    margin-top: 170px;
+}
+
+.homepagename {
+    width: 30%;
+    height: 50px;
+    margin-top: -70px;
+    margin-bottom: -100px;
+    font-size: 2em;
+    font-weight: 700;
+    background-color: #4d4959;
+    text-align: center;
+    padding: 15px 5px 0px 5px;
+    position: relative;
+    border-top: 3px solid #f1ffea;
+    border-bottom: 3px solid #f1ffea;
+    border-right: 3px solid #f1ffea;
+    color: #fdffeb;
+}
+
+.homeintro {
+    background-color: #fdffeb;
+    overflow: hidden;
+}
+
+.mainimg {
+    width: 62%;
+    border-left: 10px solid #fdffeb;
+}
+
+main {
+    margin-top: 70px;
+}
+
+.homeintroside {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    background-color: #fdffeb;
+    width: 36%;
+}
+
+.homeintroimg {
+    width: 72%;
+    margin-top: 25px;
+    margin-left: 14%;
+    border: 3px solid #756f87;
+}
+
+.sideimgdiv {
+    transform-origin: bottom;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    z-index: 5;
+}
+
+.bounce:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce {
+    0%      {transform: translateY(0); }
+    45%     {transform: translateY(-25px); }
+    100%    {transform: translateY(0); }
+}
+
+
+.imgcaption, .imgcaption2 {
+    position: relative;
+    z-index: 5;
+    width: 140px;
+    height: 26px;
+    background-color: #fdffeb;
+    padding: 2px;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.imgcaption {
+    margin-top: -30px;
+    margin-left: 60%;
+}
+
+.introcaption1, .introcaption2 {
+    position: relative;
+    z-index: 4;
+    margin-top: -85px;
+    background-color: #fdffeb;
+    font-weight: 700;
+    padding-top: 40px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.introcaption1 {
+    font-size: 1.6em;
+    height: 85px;
+    width: 32vw;
+}
+
+.introcaption2 {
+    font-size: 1.3em;
+    height: 50px;
+    width: 36vw;
+}
+
+.introcaption2 {
+    display: none;
+}
+
+.introduction {
+    font-size: 1.3em;
+    margin-left: 20px;
+    margin-right: 31vw;
+    margin-top: -12px;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    text-indent: 30px;
+    border-top: solid 2px #756f87;
+    border-bottom: solid 2px #756f87;
+}
+
+.abouth2 {
+    display: none;
+}
+
+.highlights {
+   margin-top: 100px;
+}
+
+h2 {
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.highlights img {
+    width: 17vw;
+    border-radius: 12px;
+    border: 3px solid #756f87;
+}
+
+.highlightsimg {
+    justify-content: space-evenly;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.imgcaption2 {
+    margin-top: -30%;
+    border-top: 3px solid #756f87;
+    border-right: 3px solid #756f87;
+    border-bottom: 3px solid #756f87;
+}
+
+/* Intro to page ---------------------------------------------------------------Intro to page -----------------*/
+
+.introtopage {
+    width: 100%; 
+}
+
+.introtopage img {
+    width: 100%;
+    margin-top: -20px;
+    border-bottom: 3px solid #a5c29e;
+}
+
+.pagename {
+    width: 30%;
+    height: 50px;
+    margin-bottom: -71px;
+    margin-top: 94px;
+    font-size: 2em;
+    font-weight: 700;
+    background-color: #4d4959;
+    text-align: center;
+    padding: 15px 5px 0px 5px;
+    position: relative;
+    border-top: 3px solid #f1ffea;
+    border-bottom: 3px solid #f1ffea;
+    border-right: 3px solid #f1ffea;
+    color: #fdffeb;
+}
+
+.introparagraph {
+    width: 80%;
+    margin: auto;
+    text-indent: 30px;
+}
+
+.introparagraph p {
+    font-size: 1.4em;
+}
+
+.faqh2, .introparagraph h2{
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 3px solid #a5c29e;
+}
+
+.introparagraph h2 {
+    margin-top: 40px;
+    font-size: 2em;
+    width: 50%;
+}
+
+/* Transportation ------------------------------------------------------------------Transportation-------------*/
+
+.transportsection1, .transportsection2 {
+    border-top:3px solid #4d4959;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.transportsection1 {
+    margin-bottom: 80px;
+    border-bottom: 3px solid #4d4959;
+    background-color: #f1ffea;
+}
+
+.transportsection2 {
+    margin-bottom: -100px;
+    background-color: #fdffeb;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cruises, .flights {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cruises {
+    margin-bottom: 10px;
+}
+
+.transportsection1 img {
+    width: 47%;
+    border-radius: 10px;
+    border: 3px solid #a5c29e;
+}
+
+.cruiseinfo {
+    float: right;
+    width: 48%;
+    margin-left: 4%;
+}
+
+.cruiseinfo p, .flightinfo p {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.3em;
+}
+
+.link2, .link3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 15px;
+    background-color: #756f87;
+    border: 2px solid #4d4959;
+    color: #fdffeb;
+    font-size: 1.4em;
+}
+
+.link2 {
+    width: 130px;
+    margin-top: 50px;
+}
+
+.link3 {
+    width: 40%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.flightinfo {
+    width: 48%;
+    margin-right: 4%;
+}
+
+.plane2 {
+    display: none;
+}
+
+.localtransportimages {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 10%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.localtransportimages img {
+    border-radius: 15%;
+    width: 50%;
+    margin: 20px 20px 0px 20px;
+}
+
+.transportoptions {
+    float: right;
+    width: 45%;
+    margin-right: 5%;
+    margin-bottom: 30px;
+}
+
+.transportoptions h2 {
+    margin-top: 80px;
+    font-size: 1.8em;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 3px solid #a5c29e;
+}
+
+.transportoptions ul {
+    margin: auto;
+}
+
+.transportoptions ul li {
+    list-style: none;
+}
+
+.transportoption2 {
+    border: 3px solid #4d4959;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.transportoption2 p {
+    text-indent: 30px;
+    font-size: 1.3em;
+    margin-top: 30px;
+}
+
+/* Lodging -------------------------------------------------------------------------Lodging -------------------*/
+
+.lodgingsection {
+    width: 100%;
+    margin-bottom: -104px;
+    margin-top: 60px;
+}
+
+.lodgeimg {
+    width: 35%;
+    height: 380px;
+    margin-bottom: -4px;
+}
+
+.lodginga, .lodgingb {
+    width: 65%;
+    height: 380px;
+}
+
+.lodginga {
+    float: left;
+    background-color: #f1ffea;
+}
+
+.lodgingb {
+    float: right;
+    background-color: #fdffeb;
+}
+
+.lodginga h2, .lodgingb h2 {
+    margin-top: 20px;
+    font-size: 1.8em;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lodginga h2 {
+    border-bottom: 3px solid #a5c29e;
+}
+
+.lodgingb h2 {
+    border-bottom: 3px solid #756f87;
+}
+
+.lodgingsection p {
+    text-indent: 30px;
+    font-size: 1.3em;
+    width: 75%;
+    margin: auto;
+}
+
+.lodging1, .lodging3 {
+    border-top: 3px solid #a5c29e;
+    height: 24%;
+}
+
+.lodging2, .lodging4 {
+    border-top: 3px solid #756f87;
+    height: 24%;
+}
+
+/* Activities -----------------------------------------------------------------------Activities ---------------*/
+
+.activitysection {
+    width: 100%;
+    margin-bottom: -104px;
+    margin-top: 60px;
+    background-color: #fdffeb;
+    border-top: 3px solid #4d4959;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.activitysection p {
+    text-indent: 30px;
+    font-size: 1.3em;
+    width: 75%;
+    margin: auto;
+}
+
+.activity1, .activity2, .activity3, .activity4 {
+    height: 24%;
+}
+
+.activitya, .activityb {
+    width: 60%;
+    height: 380px;
+}
+
+.activitya {
+    float: left;
+}
+
+.activityb {
+    float: right;
+}
+
+.activitya h2, .activityb h2 {
+    margin-top: 20px;
+    font-size: 1.8em;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 3px solid #756f87;
+}
+
+.activityimg {
+    width: 33%;
+    height: 350px;
+    margin-bottom: -4px;
+    border-radius: 15%;
+    margin-left: 30px;
+    margin-top: 30px;
+    border: 6px solid #a5c29e;
+}
+
+
+/* FAQ ------------------------------------------------------------------------------FAQ ----------------------*/
+
+.faqquestions {
+    width: 68%;
+    padding: 20px 40px 20px 40px;
+    border: 5px solid #4d4959;
+    margin: auto;
+    font-size: 1.4em;
+    background-color: #f1ffea;
+}
+
+.faqquestions ul li {
+    margin-top: 12px;
+}
+
+.faqh2 {
+    margin-top: 80px;
+    font-size: 1.8em;
+    width: 40%;
+}
+
+.faqform {
+    width: 60%;
+    border: 5px solid #4d4959;
+    background-color: #f1ffea;
+    margin: auto;
+    padding-top: 15px;
+}
+
+fieldset {
+    border: none;
+}
+
+.info1, .info2 {
+    display: flex;
+    flex-direction: cols;
+    justify-content: center;
+    gap: 50px;
+}
+
+.info1 input, .info2 input {
+    height: 40px;
+    width: 90%;
+    font-size: 1.5em;
+}
+
+input, textarea, select {
+    display: flex;
+    flex-direction: row;
+}
+
+textarea {
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+
+.submit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 15px 35px;
+    background-color: #756f87;
+    border: 2px solid #a5c29e;
+    color: #fdffeb;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.submit:hover, .link2:hover, .link3:hover {
+    background-color:#a5c29e;
+    color: #4d4959;
+    border: 2px solid #4d4959;
+    border-radius: 10px;
+}
+
+/* Booking Page ------------------------------------------------------------------Booking Page ----------------*/
+
+.bookingcontact {
+    margin-bottom: 100px;
+}
+
+.bookingp {
+    text-align: center;
+}
+
+.bookingform {
+    width: 75%;
+    border: 5px solid #4d4959;
+    background-color: #f1ffea;
+    margin: auto;
+    padding-top: 15px;
+}
+
+.bookingselect {
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto 20px auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-evenly;
+}
+
+select {
+    width: 10vw;
+    height: 30px;
+    font-size: 1.3em;
+}
+
+.info3 {
+    display: flex;
+    flex-direction: cols;
+    justify-content: center;
+    gap: 20%;
+}
+
+.info3 input {
+    height: 40px;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+/* Book your stay ---------------------------------------------------------------Book your stay ---------------*/
+
+.bookstay {
+    width: 100%;
+    height: 200px;
+    background-color: #f1ffea;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    border-top: 3px solid #a5c29e;
+}
+
+.bookstay a {
+    font-size: 1.8em;
+    font-weight: 700;
+    border: 5px solid #756f87;
+    color: #4d4959;
+    padding: 50px 80px 50px 80px;
+    margin: auto;
+    background-color: #d4e0ce;
+    text-decoration: none;
+}
+
+/* Footer --------------------------------------------------------------------------Footer--------------------*/
+
+
+footer {
+    height: 430px;
+    background-color: #a5c29e;
+}
+
+
+.footerimg {
+    width: 100%;
+    border-top: 5px solid #756f87;
+    border-bottom: 5px solid #756f87;
+}
+
+.footerlinks {
+    float: right;
+    width: 40%;
+}
+
+footer p {
+    width: 45%;
+    margin: auto;
+    text-indent: 30px;
+    float: left;
+    padding: 20px 20px 20px 50px;
+}
+
+.footerlinks ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-right: 10%;
+}
+
+.footerlinks ul li {
+    font-size: 1.2em;
+}
+
+address {
+    margin: auto;
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+/* Responsive design for mobile -------------------------------------------------------Responsive Design------------*/
+
+@media (max-width: 750px) {
+
+
+    /* Header ------------------------------------------------*/ 
+
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        justify-content: center;
+        position: static;
+        width: 100%;
+    }
+
+    nav {
+        margin: auto;
+    }
+
+    nav ul {   
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin-right: 5vw;
+        font-weight: 700;
+        font-size: 1.5em;
+        border: solid 4px #756f87;
+        box-shadow: 5px 5px 3px #9ea799d2;
+        padding: 4px 9px;
+        background-color: #f1ffea;
+        height: 20px;
+        width: 80vw;
+        margin-top: 5px;
+        text-align: center;
+        box-shadow: none;
+    }
+
+    .bookinghead {
+        margin: auto;
+        width: 95vw;
+        text-align: center;
+        box-shadow: none;
+        width: 90%;
+    }
+
+    .homenav {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        width: 95vw;
+        text-align: center;
+        box-shadow: none;
+        width: 90%;
+    }
+
+    .language {
+       display: none;
+    }
+    
+
+
+    /* Homepage ------------------------ */
+
+
+    .homemain {
+        margin-top: 100px;
+    }
+
+    .mainimg {
+        width: 100vw;
+    } 
+
+    .imgmaincaption {
+        display: none;
+    }
+
+    .homeintroside {
+        width: 100vw;
+    }
+
+    .homeintroimg {
+        margin-top: 20px;
+    }
+
+    .introcaption1 {
+        display: none;
+    }
+
+    .introcaption2 {
+        display: block;
+    }
+
+    .abouth2 {
+        display: block;
+    }
+
+    .introduction {
+        margin-top: 30px;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        padding: 20px;
+        border-top: none;
+    }
+
+    .highlightsimg {
+        flex-wrap: wrap;
+    }
+
+    .highlights img {
+        width: 35vw;
+        margin-top: 50px;
+    }
+
+    /* Intro to Page -------------------------*/
+
+    .pagename {
+        font-size: 1.6em;
+        width: 35%;
+        height: 40px;
+        margin-top: -50px;
+    }
+
+    /* Transportation ------------------------*/
+
+    .transportsection1 {
+        padding-bottom: 35px;
+    }
+
+    .transportsection1 img {
+        margin: auto;
+        width: 75%;
+    }
+
+    .cruiseinfo, .flightinfo {
+        width: 150%;
+        margin: auto;
+    }   
+
+    .cruiseinfo {
+        float: none;
+        margin-bottom: 40px;
+    }
+
+    .plane1 {
+        display: none;
+    }
+
+    .plane2 {
+        display: block;
+    }
+
+    .transportoptions h2 {
+        font-size: 1.5em;
+    }
+
+    .localtransportimages {
+        width: 30%;
+        flex-direction: row;
+        margin-left: 15%;
+    }
+
+    .transportoptions {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 70px;
+        width: 80%;
+    }
+
+    /* Lodging -----------------------------*/
+
+    .lodginga h2, .lodgingb h2 {
+        font-size: 1.3em;
+        margin-top: 10px;
+    }
+
+    .lodgingsection p {
+        font-size: 1.1em;
+        padding: none;
+    }
+
+    .lodgeimg {
+        height: 200px;
+    }
+
+    .lodginga, .lodgingb {
+        height: 200px;
+    }
+
+    /* Activities ---------------------------*/
+
+    .activitysection p {
+        font-size: 1.1em;
+        padding: none;
+    }
+
+    .activitya h2, .activityb h2 {
+        font-size: 1.3em;
+        margin-top: 10px;
+    }
+
+    .activitya, .activityb {
+        height: 200px;
+    }
+
+    .activityimg {
+        height: 180px; 
+        width: 30%;
+    }
+
+    .activity1, .activity2, .activity3, .activity4 {
+        height: 350px;
+    }
+
+    /* Booking ------------------------------*/
+
+    .bookingselect {
+        flex-direction: column;
+        margin-left: 20%;
+        margin-top: 10px;
+    }
+
+    select {
+        width: 28vw;
+        margin-bottom: 10px;
+    }
+
+    .info3 {
+        gap: 10%;
+    }
+
+    /*Footer -------------------------------*/
+
+    .footerlinks ul {
+        flex-direction: column;
+        float: none;
+    } 
+
+    address {
+        text-align: left;
+        margin-top: 50px;
+    }
+
+    footer {
+        height: 550px;
+    }
+}
