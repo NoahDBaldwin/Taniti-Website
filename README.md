@@ -3,6 +3,7 @@
 
 <h2>Description</h2>
 This project is a website with multiple pages for tourism of a fictional country. There are different pages for booking, activites, lodging, etc. This is only a front end application so the forms don't submit to anything. Some of the photos are links that go to other pages in the site and using CSS animations they jump when hovered over. This website is published and can be viewed in it's entirety by accessing it through the link below.
+I added a folder that showcases the original wireframes that I made for each page.
 <br />
 
 
